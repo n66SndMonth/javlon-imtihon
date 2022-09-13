@@ -1,0 +1,38 @@
+@mixin button {
+  font-weight: 700;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+color: #FFFFFF;
+padding: 14px 39px;
+background: #FCB72B;
+border: none;
+}
+@mixin learn {
+  font-weight: 700;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+color: #FFFFFF;
+background: #FCB72B;
+border: none;
+padding: 14px 44px;
+}
+@mixin text {
+  padding: 20px 0;
+  font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+color: #939CAA;
+}
+@mixin title {
+  font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+color: #495567;
+}
+@mixin hover {
+  border:1px solid  #FCB72B;
+  background-color: #FFFFFF;
+  color: #FCB72B;
+}

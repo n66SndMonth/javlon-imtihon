@@ -1,0 +1,26 @@
+*,
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Mullish';
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+
+.container{
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+$font-weight: 400;
+$font-size: 15px;
+$line-height: 25px;
+$color: #939CAA;
