@@ -20,6 +20,9 @@ font-size: 15px;
 line-height: 25px;
 color: #939CAA;
   }
+  &__item__link:active{
+color: #FCB72B;
+  }
   &__button{
     @include button
   }
@@ -36,6 +39,11 @@ color: #939CAA;
     font-size: 56px;
     line-height: 56px;
     color: #FFFFFF;
+  }
+  &__hero__button:active{
+    border:1px solid  #FCB72B;
+    color: #FCB72B;
+    background: none;
   }
   &__hero__text{
     padding: 15px 98px;
@@ -56,6 +64,18 @@ color: #939CAA;
       top:500px;
       left:750px
     }
+
+&__label{
+  display: none;
+  
+}
+&__checkbox{
+  display: none;
+ 
+}
+&__wrapper{
+  display: flex;
+}  
 
   &__hero__button{
 @include button
@@ -121,6 +141,7 @@ top: 330px;
 width: 100%;
   }
   .header__hero__text{
+    padding: 0;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
@@ -144,9 +165,8 @@ color: #FFFFFF;
     margin-top: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 10px 0;
     background-position: none;
     background-size:768px 400px;
   }
@@ -154,26 +174,28 @@ color: #FFFFFF;
     content: url("../img/Group\ 8\ Copy.svg");
     position: absolute;
     right: 300px;
-    top: 330px;
+    top: 235px;
       }
-      .checkbox{
-        visibility: hidden;
-        width: 0;
-        position: absolute;
-        z-index: 1;
-    }
-    .label{
-        
+.header__wrapper{
+  display: block;
+  align-items:center ;
+}
+
+      .header__label{
+        padding: 17px 12px 19px 15px;
         border-radius: 5px;
         color: #FFFFFF;
         position: relative;
-        display: block;
+        display: flex;
+        align-items: center;
         z-index: 1;
-    margin-right: 60px;
+        width: 0px;
+        right: 100px;
         cursor: pointer;
     }
+    
     .btn{
-        padding: 17px 2px 19px 15px;
+        padding: 17px 12px 19px 15px;
         background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
         border-radius: 5px;
         color: #FFFFFF;
@@ -181,14 +203,14 @@ color: #FFFFFF;
     }
     .modal-box{
         position: fixed;
-        top: 0;
+        top: 82px;
         bottom: 0;
-        right: 150px;
+        right: 200px;
         left: 0;
         height: 100vh;
         display: flex;
-        margin-top: 60px;
-        padding: 0px 30px;
+        align-items: center;
+        flex-direction: column;
         background-color: black;
     }
     .box{
@@ -197,9 +219,14 @@ color: #FFFFFF;
         transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
         z-index: 0;
     }
-    .checkbox:checked ~ .box{
+    .header__checkbox{
+      visibility: hidden;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    }
+    .header__checkbox:checked ~ .box{
         display: block;
     }
-    
     
 }

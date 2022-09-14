@@ -1,4 +1,7 @@
 .locate{
+  background-image: url("../img/linia.svg");
+    background-repeat: no-repeat;
+   background-size: 950px 100px;
   margin-top: 150px;
   &__list{
     display: flex;
@@ -20,6 +23,10 @@
 @media screen and (max-width:768px) {
   .locate{
     width: 100%;
+   background:none;
+  }
+  .locate__item{
+    position: relative;
   }
   .locate__list{
     display: flex;
@@ -28,7 +35,7 @@
   .locate__item__img{
   position: absolute;
   margin-top: 30px;
-  right: 600px;
+  right: 300px;
   }
 }
 @media screen and (max-width:428px) {
@@ -41,5 +48,21 @@
   }
   .locate__item__img{
     position:static;
+    margin-left: 80px;
+    }
+    .locate__item__text{
+      font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+color: #939CAA;
+    }
+    .locate__item__title{
+      font-weight: 700;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+letter-spacing: -0.892857px;
+color: #495567;
     }
 }
